@@ -11,11 +11,13 @@
 		8274D9332040440B00385A9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8274D9322040440B00385A9B /* ViewController.m */; };
 		8274D9362040440B00385A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274D9342040440B00385A9B /* Main.storyboard */; };
 		8274D9382040440B00385A9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8274D9372040440B00385A9B /* Assets.xcassets */; };
-		8274D93B2040440B00385A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274D9392040440B00385A9B /* LaunchScreen.storyboard */; };
 		8274D93E2040440B00385A9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8274D93D2040440B00385A9B /* main.m */; };
+		8274D9452040449D00385A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8274D9442040449D00385A9B /* LaunchScreen.storyboard */; };
+		E79CA03E2573A063CEE1A126 /* libPods-Test App CI Nearbuy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD6219CABEBF0537CB4530E0 /* libPods-Test App CI Nearbuy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1931B66CABE5C523878301C3 /* Pods-Test App CI Nearbuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test App CI Nearbuy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test App CI Nearbuy/Pods-Test App CI Nearbuy.release.xcconfig"; sourceTree = "<group>"; };
 		8274D92B2040440A00385A9B /* Test App CI Nearbuy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test App CI Nearbuy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8274D92E2040440A00385A9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8274D92F2040440A00385A9B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -23,9 +25,11 @@
 		8274D9322040440B00385A9B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8274D9352040440B00385A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8274D9372040440B00385A9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8274D93A2040440B00385A9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8274D93C2040440B00385A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8274D93D2040440B00385A9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8274D9442040449D00385A9B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B386B232EC046D1175B4F1A /* Pods-Test App CI Nearbuy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test App CI Nearbuy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test App CI Nearbuy/Pods-Test App CI Nearbuy.debug.xcconfig"; sourceTree = "<group>"; };
+		AD6219CABEBF0537CB4530E0 /* libPods-Test App CI Nearbuy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test App CI Nearbuy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79CA03E2573A063CEE1A126 /* libPods-Test App CI Nearbuy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70977C4DC01AB5259CFE2D40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B386B232EC046D1175B4F1A /* Pods-Test App CI Nearbuy.debug.xcconfig */,
+				1931B66CABE5C523878301C3 /* Pods-Test App CI Nearbuy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8274D9222040440A00385A9B = {
 			isa = PBXGroup;
 			children = (
 				8274D92D2040440A00385A9B /* Test App CI Nearbuy */,
 				8274D92C2040440A00385A9B /* Products */,
+				70977C4DC01AB5259CFE2D40 /* Pods */,
+				FCD16B85CDDD92D576086B12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +76,23 @@
 			children = (
 				8274D92E2040440A00385A9B /* AppDelegate.h */,
 				8274D92F2040440A00385A9B /* AppDelegate.m */,
+				8274D9442040449D00385A9B /* LaunchScreen.storyboard */,
 				8274D9312040440A00385A9B /* ViewController.h */,
 				8274D9322040440B00385A9B /* ViewController.m */,
 				8274D9342040440B00385A9B /* Main.storyboard */,
 				8274D9372040440B00385A9B /* Assets.xcassets */,
-				8274D9392040440B00385A9B /* LaunchScreen.storyboard */,
 				8274D93C2040440B00385A9B /* Info.plist */,
 				8274D93D2040440B00385A9B /* main.m */,
 			);
 			path = "Test App CI Nearbuy";
+			sourceTree = "<group>";
+		};
+		FCD16B85CDDD92D576086B12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD6219CABEBF0537CB4530E0 /* libPods-Test App CI Nearbuy.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8274D9412040440B00385A9B /* Build configuration list for PBXNativeTarget "Test App CI Nearbuy" */;
 			buildPhases = (
+				C5D79A49F77E96B4B18D398C /* [CP] Check Pods Manifest.lock */,
 				8274D9272040440A00385A9B /* Sources */,
 				8274D9282040440A00385A9B /* Frameworks */,
 				8274D9292040440A00385A9B /* Resources */,
+				D4E8ECE45D63F1A595696A85 /* [CP] Embed Pods Frameworks */,
+				6D574730CE4EFB846D0A5E50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,7 +129,7 @@
 				TargetAttributes = {
 					8274D92A2040440A00385A9B = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -129,13 +156,64 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8274D93B2040440B00385A9B /* LaunchScreen.storyboard in Resources */,
+				8274D9452040449D00385A9B /* LaunchScreen.storyboard in Resources */,
 				8274D9382040440B00385A9B /* Assets.xcassets in Resources */,
 				8274D9362040440B00385A9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D574730CE4EFB846D0A5E50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test App CI Nearbuy/Pods-Test App CI Nearbuy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D79A49F77E96B4B18D398C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test App CI Nearbuy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E8ECE45D63F1A595696A85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test App CI Nearbuy/Pods-Test App CI Nearbuy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8274D9272040440A00385A9B /* Sources */ = {
@@ -157,14 +235,6 @@
 				8274D9352040440B00385A9B /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8274D9392040440B00385A9B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8274D93A2040440B00385A9B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -218,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -276,28 +346,35 @@
 		};
 		8274D9422040440B00385A9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B386B232EC046D1175B4F1A /* Pods-Test App CI Nearbuy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 54233SXNZN;
 				INFOPLIST_FILE = "Test App CI Nearbuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nearbuy.nearbuymobile.Test-App-CI-Nearbuy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearbuy.nearbuymobile.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0c228bc0-2413-4c64-b94b-0f4a0385e052";
+				PROVISIONING_PROFILE_SPECIFIER = "Test App CI Nearbuy";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8274D9432040440B00385A9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1931B66CABE5C523878301C3 /* Pods-Test App CI Nearbuy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 54233SXNZN;
 				INFOPLIST_FILE = "Test App CI Nearbuy/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nearbuy.nearbuymobile.Test-App-CI-Nearbuy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nearbuy.nearbuymobile.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0c228bc0-2413-4c64-b94b-0f4a0385e052";
+				PROVISIONING_PROFILE_SPECIFIER = "Test App CI Nearbuy";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
